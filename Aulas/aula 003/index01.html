@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+
+    <script>
+        var n1 = window.prompt('digite um número') //recebe 'string'
+        var n2 = window.prompt('digite um número') // recebe string
+        soma = n1 + n2
+        window.alert('a soma dos números é ' + soma + '.')
+
+        // o + serve para contatenação e soma. Nesse caso aí é para contatenação, pois ele está recebendo duas 'strings' através do window.prompt. logo é preciso converter string em number, olhe abaixo
+
+        somaVerdadeira = Number.parseFloat(n1) + Number.parseFloat(n2)
+        window.alert('a soma dos números é ' + somaVerdadeira + '.')
+
+        // essa forma funciona, contudo você tem forçar um float ou um int. mas o ideal nesse caso é fazer assim
+
+        somaMaisqueVerdadeira = Number(n1) + Number(n2)
+        window.alert('a soma dos números é ' + somaMaisqueVerdadeira + '.')
+
+        //só com Number() o computador decide se que tipo de number é
+
+        //caso seja necessario converter para string. Use String() ou n.toString() 
+    </script>
+</body>
+</html>
