@@ -9,7 +9,8 @@
     <h1>Iniciando estudos DOM</h1>
     <p>aqui vai o resiltado</p>
     <p>aprendendo usar <strong>DOM</strong> em JavaScript</p>
-    <div>clique em mim</div>
+    <p>o style é feito completamente com <strong>DOM</strong></p>
+    <div id="msg">clique em mim</div>
 
     <script>
         var corpo = window.document.body
@@ -17,6 +18,14 @@
 
         var cor = window.document.body
         cor.style.color = 'grey'
+
+        //por id
+        var m = window.document.getElementById('msg')
+        m.style.background = 'green'
+
+        //por seletor
+        var s = window.document.querySelector('div#msg')
+        s.style.color = 'black'
     </script>
 </body>
 </html>
